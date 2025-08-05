@@ -1,1 +1,1 @@
-tag = "common"
+tag = "common-all"
