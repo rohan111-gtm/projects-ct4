@@ -39,7 +39,7 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
-resource "aws_instance" "example" {
+resource "aws_instance" "example1" {
   ami           = "ami-0533f2ba8a1995cf9"
   instance_type = var.instance_type
 
