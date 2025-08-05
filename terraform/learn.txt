@@ -1,0 +1,30 @@
+provider "aws" {
+    region = "us-east-1"
+}
+
+resource "resourcename as defined by terraform" "local resource identification name" {
+    arguments .....
+}
+
+resource "aws_s3_bucket" "mys3" {
+    
+}
+
+resource "aws_s3_bucket" "example" {
+  bucket = "my-tf-test-bucket"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.74.0"
+    }
+  }
+}
+>=,<=
