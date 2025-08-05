@@ -32,7 +32,7 @@ resource "aws_instance" "example" {
 }
 
 
------
+
 
 #if the instance type is "t3.large", attach an EBS volume; otherwise, skip it.
 variable "instance_type" {
@@ -58,7 +58,7 @@ resource "aws_ebs_volume" "ebs" {
   }
 }
 
----
+
 
 
 
