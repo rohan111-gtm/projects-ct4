@@ -17,7 +17,6 @@ variable "instance_type" {}
 
 #make this ami dynamic with the data block
 
------
 
 variable "environment" {
   default = "dev"
