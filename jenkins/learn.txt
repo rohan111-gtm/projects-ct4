@@ -1,0 +1,47 @@
+pipeline {
+
+    agent { label 'linux-agent' }  // Runs on a specific agent with label 'my-agent'
+
+    agent any  // Runs on any available Jenkins agent
+
+    stages {
+        stage ('Git Clone') {
+            steps {
+                git clone https:
+            }
+        }
+
+        stage ('Run a Linux Command') {
+            steps {
+                mkdir deployment
+                cd deployment
+                touch a.java
+            }
+        }
+
+        stage ('Run a Linux Command') {
+            steps {
+                mkdir deployment
+                cd deployment
+                touch a.java
+            }
+        }
+    }
+}
+
+
+•	Eclipse Temurin installer
+•	Sonarqube Scanner
+•	NodeJs
+•	Docker
+•	Docker Commons
+•	Docker Pipeline
+•	Docker API
+•	Docker-build-step
+.   Terrafrom
+.   Git
+.   Git Server
+.   All Pipeline Plugins
+.   AWSCredentials
+.   Kubernetes All Plugins
+

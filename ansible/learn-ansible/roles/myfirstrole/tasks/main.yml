@@ -1,0 +1,11 @@
+- name: Print statement
+  ansible.builtin.debug:
+    msg: URL_PLAY - {{ URL_PLAY }} 
+
+- name: Print statement
+  ansible.builtin.debug:
+    msg: Hello  
+
+- name: Print statement
+  ansible.builtin.debug:
+    msg: "{{ URL_LIST }}"     

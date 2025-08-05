@@ -1,0 +1,6 @@
+[mysql]
+172.31.81.50
+
+[mysql:vars]
+ansible_user=
+ansible_password=

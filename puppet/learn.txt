@@ -1,0 +1,37 @@
+resource_type { ‘resource_attribute':
+               value,
+               ...
+}
+
+package { 'nginx':
+    ensure=> 'installed',
+}
+
+Resource Types - Predefined and Custom
+
+Basics of Writing a Puppet manifest file:
+
+1. Resource (n number)
+2. Resource Types
+3. All files of manifest should be having .pp extention
+4 Puppet Agent reads only "site.pp" manifest files from the master machine
+
+Few sample puppet commands:
+
+puppet --help
+puppet resource-types
+puppet describe <resource_type_name>
+
+## Setup of Puppet Master-Slave
+1. Install Puppet Server
+2. Install Puppet PDK
+3. Install Puppet Agent
+4. Configure Master Puppet Machine
+5. Start the Puppet Server
+6. Make DNS changes  to the Puppet Master to identify slaves
+7. Configure Slaves
+
+==============================
+Variables 
+Conditions
+Loops

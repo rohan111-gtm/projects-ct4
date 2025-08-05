@@ -1,0 +1,28 @@
+ansible -i 3.84.212.147, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ping
+
+ansible -i 3.84.212.147, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m dnf
+
+Ansible-Playbooks (YAML)
+abc.yaml
+
+---
+  hosts: all
+- name: Run a sample playbook
+  tasks:
+   - name: Execute command
+     command: apt-get install nginx 
+
+   - name: Install the latest version of Apache
+     ansible.builtin.dnf:
+        name: httpd
+        state: latest 
+
+- name: Run a sample playbook
+  tasks:
+   - name: Execute command
+     command: apt-get install nginx 
+
+   - name: Install the latest version of Apache
+     ansible.builtin.dnf:
+        name: httpd
+        state: latest       
