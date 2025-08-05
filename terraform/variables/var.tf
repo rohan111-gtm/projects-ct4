@@ -27,7 +27,7 @@ output "y" {
 } 
 
 output "y_1" {
-    value = var.y_list[1]
+    value = var.y_list[2]
 } 
 
 output "z_x" {
